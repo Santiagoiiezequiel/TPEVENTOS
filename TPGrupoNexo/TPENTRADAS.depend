@@ -1,0 +1,153 @@
+# depslib dependency file v1.0
+1791558891 source:d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\compras.c
+
+1791558891 source:d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\entradas.c
+
+1791558891 source:d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\establecimientos.c
+
+1791574986 source:d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\eventos.c
+	"Eventos.h"
+
+1791558891 source:d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\tp grupal.c
+	"TP Grupal.h"
+
+1791558891 d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\tp grupal.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+
+1791574986 source:d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\main.c
+	"TP Grupal.h"
+
+1791558891 d:\escritorio\topicos2026\tpentradas\t-picos---grupo-nexo\eventos.h
+
+1791558891 source:d:\escritorio\topicos2026\tpentradas\tpgruponexo\compras.c
+
+1793087207 source:d:\escritorio\topicos2026\tpentradas\tpgruponexo\entradas.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Entradas.h"
+	"Compras.h"
+
+1793083700 source:d:\escritorio\topicos2026\tpentradas\tpgruponexo\establecimientos.c
+	"Establecimientos.h"
+	"Eventos.h"
+	"TPGrupal.h"
+	"Compras.h"
+
+1793082223 source:d:\escritorio\topicos2026\tpentradas\tpgruponexo\main.c
+	"TPGrupal.h"
+	"Eventos.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793072911 d:\escritorio\topicos2026\tpentradas\tpgruponexo\tpgrupal.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+
+1793082223 source:d:\escritorio\topicos2026\tpentradas\tpgruponexo\tpgrupal.c
+	"TPGrupal.h"
+
+1793082223 source:d:\escritorio\topicos2026\tpentradas\tpgruponexo\eventos.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793078914 d:\escritorio\topicos2026\tpentradas\tpgruponexo\eventos.h
+	<stdio.h>
+	"Establecimientos.h"
+
+1791820990 source:c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\compras.c
+
+1791820990 source:c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\entradas.c
+
+1791820990 source:c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\establecimientos.c
+
+1791820990 source:c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\eventos.c
+	"Eventos.h"
+	"TPGrupal.h"
+
+1791820990 c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\eventos.h
+
+1791825007 c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\tpgrupal.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+
+1791825085 source:c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\main.c
+	"TPGrupal.h"
+	"Eventos.h"
+
+1791825246 source:c:\users\colom\onedrive\escritorio\tp topicos\t-picos---grupo-nexo\tpgrupal.c
+	"TPGrupal.h"
+
+1793078914 d:\escritorio\topicos2026\tpentradas\tpgruponexo\establecimientos.h
+	"TPGrupal.h"
+
+1792510394 d:\escritorio\topicos2026\tpentradas\tpgruponexo\compras.h
+	"time.h"
+	"Entradas.h"
+
+1793086930 d:\escritorio\topicos2026\tpentradas\tpgruponexo\entradas.h
+	"time.h"
+
+1791558892 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\compras.c
+
+1793144510 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\entradas.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Entradas.h"
+	"Compras.h"
+
+1793155269 c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\eventos.h
+	<stdio.h>
+	"Establecimientos.h"
+
+1793150642 c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\establecimientos.h
+	"TPGrupal.h"
+
+1793072912 c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\tpgrupal.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+
+1793086932 c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\entradas.h
+	"time.h"
+
+1792510396 c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\compras.h
+	"time.h"
+	"Entradas.h"
+
+1793154664 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\establecimientos.c
+	"Establecimientos.h"
+	"Eventos.h"
+	"TPGrupal.h"
+	"Compras.h"
+
+1793155462 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\eventos.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793154840 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\main.c
+	"TPGrupal.h"
+	"Eventos.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793082224 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\tpgrupal.c
+	"TPGrupal.h"
+
