@@ -6,7 +6,7 @@
 #define REPROGRAMADO 3
 #define ERROR_EVENTO_NO_ENCONTRADO -99
 #define ERROR_CREACION_VEC -77
-
+#define ERROR_DATOS_INVALIDOS -1
 #include <stdio.h>
 #include "Establecimientos.h"
 #define LIBRE 1

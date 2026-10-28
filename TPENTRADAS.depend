@@ -151,3 +151,54 @@
 1793082224 source:c:\users\mauricio\desktop\41743980_arriola_santiago_tp\tpgruponexo\tpgrupal.c
 	"TPGrupal.h"
 
+1791558892 source:d:\escritorio\mauri\tpeventos\compras.c
+
+1793144512 source:d:\escritorio\mauri\tpeventos\entradas.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Entradas.h"
+	"Compras.h"
+
+1793166703 d:\escritorio\mauri\tpeventos\eventos.h
+	<stdio.h>
+	"Establecimientos.h"
+
+1793150644 d:\escritorio\mauri\tpeventos\establecimientos.h
+	"TPGrupal.h"
+
+1793072912 d:\escritorio\mauri\tpeventos\tpgrupal.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<locale.h>
+	<windows.h>
+
+1793086932 d:\escritorio\mauri\tpeventos\entradas.h
+	"time.h"
+
+1792510396 d:\escritorio\mauri\tpeventos\compras.h
+	"time.h"
+	"Entradas.h"
+
+1793154666 source:d:\escritorio\mauri\tpeventos\establecimientos.c
+	"Establecimientos.h"
+	"Eventos.h"
+	"TPGrupal.h"
+	"Compras.h"
+
+1793154842 source:d:\escritorio\mauri\tpeventos\main.c
+	"TPGrupal.h"
+	"Eventos.h"
+	"Establecimientos.h"
+	"Compras.h"
+
+1793082224 source:d:\escritorio\mauri\tpeventos\tpgrupal.c
+	"TPGrupal.h"
+
+1793166779 source:d:\escritorio\mauri\tpeventos\eventos.c
+	"Eventos.h"
+	"TPGrupal.h"
+	"Establecimientos.h"
+	"Compras.h"
+

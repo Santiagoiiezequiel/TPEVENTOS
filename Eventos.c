@@ -49,7 +49,11 @@ int AltaEvento()
     }
 
     nuevoEvento.estado = 1;
-
+    if (strlen(nuevoEvento.id) == 0 || strlen(nuevoEvento.nombre) == 0)
+    {
+        printf("\nError: El ID y el nombre del evento no pueden estar vacios.\n");
+        return ERROR_DATOS_INVALIDOS; // O el código de error que manejen en su TP
+    }
     // 3. Abrimos lectura y escritura en simultáneo para hacer UN SOLO recorrido
     pflectura = fopen("Eventos.bin", "rb");
     pfescritura = fopen("Eventostemp.bin", "wb");
@@ -181,7 +185,7 @@ int reporteOcupacion()
 
 int buscarEventoAdmin()
 {
-    char idEvento[9];
+    char idEvento[10];
     tEvento eventoEncontrado; // Declaramos la estructura local que vamos a llenar
 
     printf("\nIngrese el ID del evento para su búsqueda: ");
@@ -304,7 +308,7 @@ int gestionarEvento()
         return ERROR_ARCHIVO_LECTURA;
     }
     tEvento eventoActual;
-    char idEvento[9];
+    char idEvento[10];
     int opcion=0;
     int encontrado=0;
 
@@ -420,7 +424,7 @@ int contarRegistrosTotales(FILE *pf)
 
 int consultarEventoPorId()
 {
-    char idBuscado[9];
+    char idBuscado[10];
     tEvento eventoEncontrado;
 
 
@@ -502,7 +506,7 @@ float calcularRecaudacion(char *idEvento)
 
 int consultarVentas()
 {
-    char idEvento[9];
+    char idEvento[10];
     int cantVendidas=0;
     int cantCanceladas=0;
     float recaudacionTotalVendidas=0;
@@ -630,14 +634,14 @@ void mostrarRanking(tVector *v)
     printf("\n========================================\n");
     printf("   RANKING DE RECAUDACIÓN DE EVENTOS    \n");
     printf("========================================\n");
-
+    int i;
     if (v->ce == 0)
     {
         printf("El vector está vacío.\n");
         return;
     }
 
-    for (size_t i = 0; i < v->ce; i++)
+    for ( i = 0; i < v->ce; i++)
     {
         // Nos posicionamos en el elemento i usando aritmética de punteros con char*
         tEvento *eventoActual = (tEvento*)((char*)v->vec + (i * v->tam));
@@ -645,7 +649,7 @@ void mostrarRanking(tVector *v)
         // Calculamos o leemos su recaudación
         float recaudacion = calcularRecaudacion(eventoActual->id);
 
-        printf("%d. Evento ID: %u | Nombre: %s | Recaudación: $%.2f\n",i + 1,eventoActual->id,eventoActual->nombre,recaudacion); // Ajustá el campo según cómo se llame en tu struct tEventorecaudacion);
+        printf("%d Evento ID: %s | Nombre: %s | Recaudación: $%.2f\n",i + 1,eventoActual->id,eventoActual->nombre,recaudacion); // Ajustá el campo según cómo se llame en tu struct tEventorecaudacion);
     }
     printf("========================================\n");
 }
