@@ -662,43 +662,60 @@ int cmp(const void *a , const void *b)
     float recB=0;
 
     recA=calcularRecaudacion(pa->id);
-    recA=calcularRecaudacion(pb->id);
+    recB=calcularRecaudacion(pb->id);
     if (recA < recB) return 1;   // Para ordenar de mayor a menor
     if (recA > recB) return -1;
     return 0;
 }
 
-int insertarVector(tVector *v , void *elem,int cmp(const void* , const void*))
+
+
+int _ampliarVector(tVector *v)
 {
-    int i;
+    void *temp;
+    temp=malloc(v->tam * (v->cap+ MINCAP));
+    if(!temp)
+    {
+        return VECTOR_ERROR_SIN_MEMORIA;
+    }
+    memcpy(temp,v->vec,v->tam * v->ce);
+    free(v->vec);
+    v->vec = temp;
+    v->cap = v->cap + MINCAP;
+    return TODO_OK;
+}
+
+int insertarVector(tVector *v, void *elem, int cmp(const void*, const void*))
+{
+    // 1. Control de capacidad
     if(v->ce==0)
     {
         memcpy(v->vec,elem,v->tam);
         v->ce++;
         return TODO_OK;
     }
-    i = v->ce-1;
 
-    while (i >= 0)
+    if(v->ce == v->cap)
     {
+        if(!_ampliarVector(v))
+            return VECTOR_ERROR_SIN_MEMORIA;
+    }
 
-        void *elemActual = (char*)v->vec + (i * v->tam);
+    int i = v->ce - 1;
 
-        // Comparamos la recaudación del elemento actual con la nueva
-        if (cmp(elemActual, elem) > 0)
-        {
-            break; // Encontramos su posición
-        }
-
-        // Si es menor, desplazamos el bloque de memoria una posición hacia adelante
+    // Desplazamos hacia la derecha mientras el elemento actual sea mayor al nuevo
+    while (i >= 0 && cmp((char*)v->vec + (i * v->tam), elem) > 0)
+    {
         void *destino = (char*)v->vec + ((i + 1) * v->tam);
+        void *elemActual = (char*)v->vec + (i * v->tam);
         memcpy(destino, elemActual, v->tam);
         i--;
     }
 
-    // Insertamos el nuevo elemento en la posición que quedó libre
+    // Insertamos en la posición libre que dejó el último decremento de i
     void *posInsercion = (char*)v->vec + ((i + 1) * v->tam);
     memcpy(posInsercion, elem, v->tam);
     v->ce++;
+
     return TODO_OK;
 }

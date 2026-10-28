@@ -160,7 +160,7 @@
 	"Entradas.h"
 	"Compras.h"
 
-1793166703 d:\escritorio\mauri\tpeventos\eventos.h
+1793201842 d:\escritorio\mauri\tpeventos\eventos.h
 	<stdio.h>
 	"Establecimientos.h"
 
@@ -196,7 +196,7 @@
 1793082224 source:d:\escritorio\mauri\tpeventos\tpgrupal.c
 	"TPGrupal.h"
 
-1793166779 source:d:\escritorio\mauri\tpeventos\eventos.c
+1793202925 source:d:\escritorio\mauri\tpeventos\eventos.c
 	"Eventos.h"
 	"TPGrupal.h"
 	"Establecimientos.h"
